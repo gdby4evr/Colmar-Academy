@@ -1,0 +1,42 @@
+/* font references:
+
+font-family: 'Abril Fatface', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Muli', sans-serif;
+
+ */
+
+/* Universal Styles */
+
+/* Navigation Bar */
+header {
+  padding-left: 1.3rem;
+  padding-right: 1.5rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 80%;
+}
+
+.navigation-bar {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+ .logo {
+  display: flex;
+  align-items: center;
+  
+
+}
+
+}
+/* First Section */
