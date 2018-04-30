@@ -9,7 +9,24 @@ font-family: 'Muli', sans-serif;
 
 /* Universal Styles */
 
+html {
+  font-size: 16px;
+  background-color: #fcece7;
+}
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
 /* Navigation Bar */
+
 header {
   padding-left: 1.3rem;
   padding-right: 1.5rem;
@@ -31,12 +48,72 @@ header img {
   padding: 0;
   margin: 0 auto;
 }
+
  .logo {
   display: flex;
   align-items: center;
-  
+  height: 2rem;
+  font-size: 1.5rem
+  padding-left: 24px;
+}
+
+.colmar {
+  color: #D5AB9B;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-height: 32px;
+}
+
+.academy {
+  color: #1c1014;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-height: 32px;
 
 }
 
+.navigation-bar .nav {
+  height: 100%;
+  display: flex;
+
 }
-/* First Section */
+
+.navigation-bar span {
+  display: flex;
+  align-items: right;
+  color: #b63f35;
+  border-right: 24px;
+  margin-left: auto;
+  margin-right: 24px;
+  justify-content: space-between;
+  space-between: 16px;
+
+}
+
+.navigation-bar .nav span:last-child {
+  border-right: none;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 460px) {
+  .navigation-bar, .lion-logo {
+    display: none;
+    }
+
+  .navigation-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+  }
+}
+
+/* Banner Section */
+/* Information Section */
+/* Start Learning Section */
+/* Thesis Exhibit Section */
+/* Footer */
