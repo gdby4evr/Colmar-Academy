@@ -1,17 +1,24 @@
-/* font references:
-
+/*
+- font references -
 font-family: 'Abril Fatface', cursive;
 font-family: 'Merriweather', serif;
 font-family: 'Work Sans', sans-serif;
 font-family: 'Muli', sans-serif;
 
+
+- colors -
+pastel coral: #fea390
+off-white: #fff4ee
+purpley-brown: #50434d
+yellowy-beige: #feeac7
+cute-coral: #fb9664
  */
 
 /* Universal Styles */
 
 html {
   font-size: 16px;
-  background-color: #fcece7;
+  background-color: #feeac7;
 }
 
 body {
@@ -28,9 +35,7 @@ h2 {
 /* Navigation Bar */
 
 header {
-  padding-left: 1.3rem;
-  padding-right: 1.5rem;
-  height: 4rem;
+  height: 64px;
   display: flex;
   align-items: center;
 }
@@ -39,26 +44,32 @@ header img {
   height: 80%;
 }
 
-.navigation-bar {
-  display: inline-flex;
-  justify-content: space-between;
+.nav {
   align-items: center;
-  height: 100%;
-  width: 100%;
   padding: 0;
   margin: 0 auto;
+  position: absolute;
+  margin-left: 50%;
+}
+
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  overflow: hidden;
+  background-color: #fa5e48;
 }
 
  .logo {
   display: flex;
   align-items: center;
-  height: 2rem;
-  font-size: 1.5rem
+  font-size: 1.5rem;
   padding-left: 24px;
 }
 
 .colmar {
-  color: #D5AB9B;
+  color: #fcece7;
   font-weight: 600;
   text-transform: uppercase;
   font-height: 32px;
@@ -75,31 +86,39 @@ header img {
 .navigation-bar .nav {
   height: 100%;
   display: flex;
-
-}
-
-.navigation-bar span {
-  display: flex;
-  align-items: right;
-  color: #b63f35;
-  border-right: 24px;
-  margin-left: auto;
-  margin-right: 24px;
   justify-content: space-between;
-  space-between: 16px;
+  /* max-height: 64px; */
 
 }
+
+.navigation-bar a {
+    float: rigtht;
+    color: #fcece7;
+    text-align: center;
+    text-decoration: none;
+    padding-right:24px;
+    display: inline-flex;
+
+}
+
+.navigation-bar a:hover {
+    color: black;
+}
+
+
 
 .navigation-bar .nav span:last-child {
-  border-right: none;
+  border-right: 24px;
 }
+
+/* mobile navigation-bar */
 
 .navigation-mobile {
   display: none;
 }
 
 @media only screen and (max-width: 460px) {
-  .navigation-bar, .lion-logo {
+  .nav, .lion-logo {
     display: none;
     }
 
@@ -113,7 +132,349 @@ header img {
 }
 
 /* Banner Section */
+
+.banner {
+  background-color: #fea390;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.banner .image-container {
+  width: 100%;
+  display: block;
+  align-items: center;
+  margin: 2rem 1.5rem;
+}
+
+.banner img {
+  max-width: 91.5%;
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
+
+}
+
+.banner-text {
+  margin-left: 48px;
+  display: flex;
+}
+
+.learning-new {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  min-height: 30%;
+}
+
+.motivational-quote {
+  height: 24rem;
+  display: inline-flex;
+  flex-direction: column;
+  color: #1c1014;
+  text-align: left;
+}
+
+.motivational-quote h1{
+   font-size: 3rem;
+   font-weight: 800;
+   margin-bottom: 2rem;
+   line-height: 1.2;
+
+}
+
+.start-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #fa5e48;
+  font-size: 1.3rem;
+  border-radius: 0.1rem;
+  width: 80%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.start-button a {
+  color: #fcece7;
+  text-decoration: none;
+}
+
+.start-button a:hover {
+    color: black;
+}
+.start-button span {
+  margin: 0.5rem auto;
+  font-weight: 700;
+  color: #fcece7;
+}
+
+/* banner media only */
+
+@media only screen and (max-width: 460px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner .image-container {
+    width: 100%;
+    margin: 32px 24px;
+  }
+  .banner .image-container img {
+    height: 18rem;
+  }
+
+  .motivational-quote {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+
+  .motivational-quote h1 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .motivational-quote p {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .start-button {
+    width: 100%;
+    height: ;
+  }
+}
+
 /* Information Section */
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  margin: 2rem 1.5rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main .image-container {
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.main img {
+  width: 100%;
+}
+
+.practice {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.practice h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.practice p {
+  line-height: 1.4;
+}
+
+.practice span {
+  font-size: 0.8rem;
+  margin-top: 3rem;
+}
+
+.articles {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 40%;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.article.graybox {
+  border-bottom: none;
+  background-color: silver;
+}
+
+.article.graybox:last-child {
+  bacground-color: white;
+}
+
+.article .image-container.first {
+  margin-top: 0;
+}
+
+.article .image-container {
+  width: 35%;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article img {
+  max-width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.description {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.description h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color:  hsl(200, 10%, 20%);
+}
+
+.mobile-lecture {
+  display: none;
+}
+
+.description p {
+  color: hsl(200, 10%, 20%);
+  margin-bottom: 0.5rem;
+}
+.description span {
+  color: #fea390;
+}
+
+.description span:hover {
+  color: #fb9664;
+}
+
+/* mobile learning stuff */
+
+@media only screen and (max-width: 460px) {
+  .main {
+    display: none;
+  }
+
+  .articles {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+  }
+
+  .article {
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+  }
+
+  .article .image-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .article img, .article.greybox img {
+    width: 100%;
+    height: 13rem;
+  }
+
+@media only screen and (max-width: 460px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .description {
+    width: 80%;
+    margin-left: 1rem;
+  }
+
+  .desktop-lecture {
+    display: none;
+  }
+
+  .mobile-lecture {
+    display: block;
+  }
+}
+
+
+
 /* Start Learning Section */
+
+.learning {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 2rem;
+
+}
+
+.learning h3 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size:
+  color:
+}
+
+.programs {
+  display: flex;
+
+}
+
+.top {
+
+}
+
+.course {
+  display: inline-flex;
+}
+
+.course span {
+
+}
+
+.course h2 {
+
+}
+
+/* media programs */
+
+@media only screen and (max-width: 460px) {
+
+}
+
 /* Thesis Exhibit Section */
+
+
 /* Footer */
