@@ -45,6 +45,9 @@ header img {
 }
 
 .nav {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
   padding: 0;
   margin: 0 auto;
@@ -57,7 +60,6 @@ header img {
   width: 100%;
   height: 4rem;
   display: flex;
-  overflow: hidden;
   background-color: #fa5e48;
 }
 
@@ -83,12 +85,15 @@ header img {
 
 }
 
+.navigation-bar .nav a {
+  display: flex;
+  align-items: center;
+}
+
 .navigation-bar .nav {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  /* max-height: 64px; */
-
 }
 
 .navigation-bar a {
@@ -105,21 +110,20 @@ header img {
     color: black;
 }
 
-
-
 .navigation-bar .nav span:last-child {
   border-right: 24px;
 }
-
-/* mobile navigation-bar */
 
 .navigation-mobile {
   display: none;
 }
 
+/* mobile navigation-bar */
+
 @media only screen and (max-width: 460px) {
   .nav, .lion-logo {
     display: none;
+    padding: 0 1.5rem;
     }
 
   .navigation-mobile {
@@ -177,6 +181,7 @@ header img {
   flex-direction: column;
   color: #1c1014;
   text-align: left;
+  padding-right: 24px;
 }
 
 .motivational-quote h1{

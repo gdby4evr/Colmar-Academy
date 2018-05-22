@@ -79,6 +79,7 @@ header img {
 .navigation-mobile {
   display: none;
 }
+/* mobile nav bar */
 
 @media only screen and (max-width: 460px) {
   .nav {
@@ -120,6 +121,7 @@ header img {
   width: 40%;
   display: flex;
   flex-direction: column;
+
 }
 
 .motivational-quote h1 {
